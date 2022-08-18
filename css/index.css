@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,600,700);
 
 * {
   margin: 0px;
@@ -91,4 +92,97 @@ body {
   background-image: url('./../assets/main.jpg');
   background-repeat: no-repeat;
   background-position: center top;
+  padding-top: 300px;
+}
+
+.main__container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.main__content-container {
+  max-width: 1180px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+.main__content {
+  max-width: 680px;
+  float: right;
+}
+.main__pretitle {
+  text-transform: uppercase;
+  font-size: 16px;
+  background-image: url('./../assets/main-pretitle-bg.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  line-height: 1.4;
+  background-size: contain;
+  padding: 10px 40px;
+  letter-spacing: 0.7em;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main__title {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 35px;
+}
+.main__title span {
+  color: #fab520;
+}
+.main__subtitle {
+  font-size: 22px;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.main__subtitle span {
+  font-weight: 400;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.main__button {
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  color: #6c5d24;
+  background: linear-gradient(to top,#e1af00 0%,#f5d70e 100%);
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 5px #e1af00;
+  }
+  75% {
+    box-shadow: 0px 0px 53px #e1af00;
+  }
+  100% {
+    box-shadow: 0px 0px 55px rgb(255, 255, 112);
+  }
 }
