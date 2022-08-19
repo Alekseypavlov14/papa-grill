@@ -226,7 +226,7 @@ body {
   width: 100%;
   max-width: 520px;
 }
-.about__content__title {
+.about__title {
   padding: 60px 0px;
 }
 .about__content__title span {
@@ -270,24 +270,14 @@ body {
 }
 @keyframes pulse-thrice {
   0% {
-    box-shadow: 0px 0px 0px 0px rgba(110, 110, 110, 0.1),
-                0px 0px 0px 0px rgba(110, 110, 110, 0.1),
+    box-shadow: 0px 0px 0px -60px rgba(110, 110, 110, 0.1),
+                0px 0px 0px -30px rgba(110, 110, 110, 0.1),
                 0px 0px 0px 0px rgba(110, 110, 110, 0.1);
   }
-  33% {
-    box-shadow: 0px 0px 0px 0px rgba(110, 110, 110, 0.1),
-                0px 0px 0px 0px rgba(110, 110, 110, 0.1),
-                0px 0px 0px 20px rgba(110, 110, 110, 0.1);
-  }
-  67% {
-    box-shadow: 0px 0px 0px 0px rgba(110, 110, 110, 0.1),
-                0px 0px 0px 20px rgba(110, 110, 110, 0.1),
-                0px 0px 0px 40px rgba(110, 110, 110, 0.1);
-  }
   100% {
-    box-shadow: 0px 0px 0px 20px rgba(110, 110, 110, 0.05),
-                0px 0px 0px 40px rgba(110, 110, 110, 0.03),
-                0px 0px 0px 60px rgba(110, 110, 110, 0.01);
+    box-shadow: 0px 0px 0px 30px rgba(110, 110, 110, 0.05),
+                0px 0px 0px 60px rgba(110, 110, 110, 0.05),
+                0px 0px 0px 90px rgba(110, 110, 110, 0.05);
   }
 }
 .about__button__triangle {
@@ -297,11 +287,16 @@ body {
   border-bottom: 10px solid transparent;
   transform: translateX(2px);
 }
+.about__link__text {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .about__link__title {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.64;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-family: 'Rubik', sans-serif;
   color: #333;
   text-transform: uppercase;
@@ -309,8 +304,106 @@ body {
 .about__link__title span {
   color: red;
 }
-.about__link__text {
+.about__link__description {
   font-size: 14px;
   letter-spacing: .04em;
   color: #333;
+}
+/* =======================  statistic  ====================== */
+.statistic {
+  width: 100%;
+  min-height: 800px;
+  background-color: #232323;
+  background-image: url('./../assets/statistic.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 60px 0px;
+}
+.statistic__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  position: relative;
+}
+.statistic__pre-title {
+  color: #eee;
+  letter-spacing: 2px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.statistic__pre-title span {
+  color: #fab520;
+}
+.statistic__title {
+  font-size: 122px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.statistic__post-title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #fff;
+}
+.statistic__post-title span {
+  color: #fab520;
+}
+.statistic__title-block {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.statistic__image {
+  position: absolute;
+  bottom: -10%;
+  right: 0%;
+  z-index: 0;
+}
+.statistic__link {
+  padding: 5px;
+  background-color: #2f2c30;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
+  border-radius: 35px;
+}
+.full-menu__icon {
+  background-color: #3b383c;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.download-icon {
+  font-size: 44px !important;
+  color: #fab520;
+  font-weight: 200 !important;
+  user-select: none;
+  cursor: pointer;
+}
+.full-menu__icon:hover {
+  background-color: #454446;
+}
+.full-menu__text {
+  font-size: 12px;
+  max-width: 110px;
+  user-select: none;
+  cursor: pointer;
+}
+.full-menu__main-text {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.full-menu__second-text {
+  color: #fff;
+  opacity: 0.45;
+  line-height: 1.2;
 }
