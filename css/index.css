@@ -426,7 +426,7 @@ body {
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -434,6 +434,7 @@ body {
 .reasons__title-block {
   max-width: 50%;
   margin-bottom: 25px;
+  width: calc(50% - 10px);
 }
 .reasons__title {
   color: #fff;
@@ -485,4 +486,46 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
+}
+/* ======================  rules  ===================== */
+.rules {
+  background-image: url('./../assets/rules.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 100%;
+}
+.rules__container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 150px 15px;
+  margin: 0 auto;
+  min-height: 800px;
+}
+.rules__content {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.rules__text-content {
+  flex: 1 1 50%;
+}
+.rules__title {
+  margin-bottom: 50px;
+}
+.rules__title span {
+  color: #fab520;
+}
+.rules__text {
+  line-height: 1.88;
+  font-size: 18px;
+}
+.rules__text__paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+.rules__img {
+  width: 550px;
+  max-width: 100%;
 }
