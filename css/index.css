@@ -292,6 +292,12 @@ body {
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
+.main__buttons {
+  display: flex;
+  column-gap: 70px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
 .main__button {
   padding: 20px 50px;
   font-size: 18px;
@@ -322,6 +328,45 @@ body {
   100% {
     box-shadow: 0px 0px 0px 20px rgba(225, 175, 0, 0);
   }
+}
+.video-badge {
+  border-radius: 40px;
+  background-color: rgb(47, 44, 48);
+  height: 80px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  gap: 20px;
+}
+.video-badge__play-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: rgb(59, 56, 60);
+  color: #fff;
+  border: none;
+}
+.video-badge__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px 0px;
+  padding-right: 30px;
+}
+.video-badge__title {
+  font-size: 12px;
+  text-decoration: underline;
+  line-height: 16px;
+  font-weight: 600;
+}
+.video-badge__duration {
+  opacity: 0.43;
+  font-size: 14px;
 }
 @media (max-width: 700px) {
   .main {
