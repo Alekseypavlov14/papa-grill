@@ -197,6 +197,7 @@ body {
 }
 .header__contact__content {
   color: #fff;
+  cursor: pointer;
   transition: color 0.3s;
   font-size: 28px;
   font-weight: 600;
@@ -312,6 +313,7 @@ body {
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
+  cursor: pointer;
 }
 @keyframes pulse {
   0% {
