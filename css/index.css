@@ -54,13 +54,7 @@ body {
 }
 .burger-menu__link {
   display: block;
-  color: #fff;
   font-size: 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.burger-menu__link:hover {
-  color: #fab520;
 }
 .burger-menu__link:not(:last-child) {
   margin-bottom: 30px;
@@ -143,6 +137,16 @@ body {
     display: none;
   }
 }
+/* link */
+a.link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+a.link:hover {
+  color: #fab520;
+}
 /* ================  header  ==================== */
 
 .header {
@@ -196,14 +200,8 @@ body {
   text-align: right;
 }
 .header__contact__content {
-  color: #fff;
-  cursor: pointer;
-  transition: color 0.3s;
   font-size: 28px;
   font-weight: 600;
-}
-.header__contact__content:hover {
-  color: #fab520;
 }
 @media (max-width: 800px) {
   .header__contact__text {
@@ -795,6 +793,81 @@ body {
   }
   .rules__title {
     font-size: 44px;
+  }
+}
+/* ==================  contacts ================= */
+.contact {
+  width: 100%;
+  background-image: url('./../assets/contacts-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(36, 34, 32);
+}
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+.contact__text-content {
+  flex: 1 1 400px;
+}
+.contact__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "IntroHeadH-Base", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.08;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.contact__subtitle {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.contact__block:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contact__block__title {
+  color: rgb(225, 175, 0);
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contact__block__content {
+  font-size: 14px;
+  color: #fff;
+}
+.contact__map-container {
+  width: 530px;
+  height: 530px;
+  flex: 0 0 auto;
+}
+.contact__map-container > * {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1088px) {
+  .contact {
+    text-align: center;
+  }
+  .contact__map-container {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 500px) {
+  .contact__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .contact__subtitle {
+    font-size: 20px;
   }
 }
 /* ==================  footer  ================== */
